@@ -6,17 +6,127 @@
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="scss/main.css">
     <title>Document</title>
 </head>
 <body>
     
-    <header>Le menu du site Quai Antique <i class="bi bi-airplane"></i></header>
+    <header>
+      
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/">Quai Antique</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active"href="/">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Galerie</a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">La carte</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Les réservations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Mon compte</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Connexion/Déconnexion</a>
+                  </li>
+                </div>
+            </div>
+            </div>
+          </nav>
+          <div class="hero-scene text-center">
+            <div class="hero-scene-content">
+                <p>Le chef Arnault Michant vous invite au</p>
+                <h1>Quai Antique</h1>
+                <button class="btn btn-primary">Réserver</button>
+            </div>
+        </div>
+    </header>
 
     <main id="main-page">
-        <!-- Le contenu de la page sera injectée ici-->
+      <section>
+        <article>
+            <div class="container p-4">
+                <h2 class="text-center text-primary">Bienvenue au Quai Antique</h2>
+                <div class="row row-cols-2 align-itemps-center">
+                    <div class="col">
+                    <p class="text-justify">
+                      Bienvenue sur le site de notre restaurant gastronomique situé au cœur de la magnifique ville de Chambéry. Le chef Arnaud Michant vous invite à découvrir une voyage culinaire mémorable.</p>
+                    <div class="col">
+                    <img src="../images/salmon.jpg"/>
+                    </div>
+                    </div>
+                    <div class="text-center pt-4">
+                        <a href="#" class="btn btn-primary">Nos menus</a>
+                    </div>
+                </div>
+            </div>
+        </article>   
+        <article class="bg-black text-white">
+          <div class="container p-4">
+              <h2 class="text-center text-primary">Des produits frais</h2>
+              <div class="row row-cols-2 align-itemps-center">
+                  <div class="col">
+                    <div class="col">
+                      <img class="w-100 rounded" src="../images/dinner.table.jpg"/>
+                      </div>
+                  <p class="text-justify">
+                    Découvrez la richesse des saveurs avec nos plats élaborés à partir de produits frais et de saison, cueillis localement.</p>
+                  </div>
+                  <div class="text-center pt-4">
+                      <a href="#" class="btn btn-primary">Voir galerie</a>
+                  </div>
+              </div>
+          </div>
+      </article>
+        <article>
+          <div class="container p-4">
+              <h2 class="text-center text-primary">Réservation en ligne</h2>
+              <div class="row row-cols-2 align-itemps-center">
+                  <div class="col">
+                  <p class="text-justify">
+                    Vous pouvez directement réserver votre table sur ce site ! Il suffit de cliquer sur le bouton ci-dessous                </p>
+                  <div class="col">
+                  <img class="w-100 rounded" src="../images/dinner.table.jpg"/>
+                  </div>
+                  </div>
+                  <div class="text-center pt-4">
+                      <a href="#" class="btn btn-primary">Réserver</a>
+                  </div>
+              </div>
+          </div>
+      </article>
+    </section>
     </main>
 
-    <footer>Le footer de mon site</footer>
+    <footer class="bg-dark text-white text-center footer">
+        <div class="row">
+        <div class="col-12 col-lg-4">
+            <h3 class="text-primary">Nos horaires</h3>
+            <p> Du mardi au dimanche  12:00-14:00  18:00-23:00</p>
+        </div>
+        <div class="col-6 col-lg-4">
+            <p>Quai Antique<br/>
+            5 rue de la route<br/>
+            31150 Ville<br/>
+            04 01 01 01 01<br/>
+            </p>
+        </div>
+        <div class="col-6 col-lg-4">
+            <p>contact@quaiantique.com</p>
+        </div>
+        </div>
+    </footer>
 
     <script type="moddule" src="Router/router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
